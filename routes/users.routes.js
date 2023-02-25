@@ -17,7 +17,7 @@ usersRouter.post("/register", register);
 usersRouter.post("/login", login);
 
 // /users -- GET/admin ==> To get user data.
-usersRouter.get("/", AdminRoleAuth, getUser);
+usersRouter.get("/", getUser);
 
 // /users/:id -- GET/admin ==> To get single user data.
 usersRouter.get("/:id", getSingleUser);
