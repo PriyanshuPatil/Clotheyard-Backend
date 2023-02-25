@@ -26,6 +26,6 @@ usersRouter.get("/:id", getSingleUser);
 usersRouter.patch("/:id", updateUser);
 
 // /users/:id -- DELETE/admin ==> To delete single user data.
-usersRouter.delete("/:id", AdminRoleAuth, deleteUser);
+usersRouter.delete("/:id", deleteUser);
 
 module.exports = { usersRouter };
