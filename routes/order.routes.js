@@ -13,7 +13,7 @@ const { Authenticator } = require("../middleware/authentication.middleware");
 
 const ordersRouter = express.Router();
 
-ordersRouter.get("/allorders", AdminRoleAuth, getAllOrders);
+ordersRouter.get("/allorders", getAllOrders);
 
 ordersRouter.use(Authenticator);
 
