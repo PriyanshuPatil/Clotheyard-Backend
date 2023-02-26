@@ -8,10 +8,8 @@ const orderSchema = new mongoose.Schema(
       required: true,
       ref: "clotheyard_user",
     },
-    products: {
-      type: [{ type: mongoose.Schema.Types.ObjectId, ref: "cart_item" }],
-      required: true,
-    },
+    products:  [{ type: mongoose.Schema.Types.ObjectId, ref: "cart_item" }],
+ 
     address: { type: String, default: "46-D Nagin Nagar,Indore" },
     status: { type: String, default: "Pending" },
   },
